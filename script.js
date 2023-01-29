@@ -13,9 +13,9 @@ menuBtns.forEach(item =>{
 
 imageChange = () =>{
     if(window.innerWidth >= 800){
-        mainImage.src = '/assets/images/image-web-3-desktop.jpg'
+        mainImage.src = './assets/images/image-web-3-desktop.jpg'
     }else{
-        mainImage.src = '/assets/images/image-web-3-mobile.jpg'
+        mainImage.src = './assets/images/image-web-3-mobile.jpg'
     }
 }
 imageChange()
