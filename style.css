@@ -15,6 +15,7 @@ body{
     width: 375px;
     padding: 1rem;
     box-shadow: 0px 0px 15px 2px grey;
+    justify-content: center;
 }
 /* ===================================
         header-styling
@@ -170,14 +171,17 @@ section{
 =================================== */
 
 @media (min-width: 800px) {
-
+        body{
+            
+        }
         .outer-grid{
-            max-width:1440px;
-            min-width: 1000px;
+            width:1440px;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: 150px 450px 13rem ;
-            gap:1rem
+            grid-template-columns: 700px 320px;
+            grid-template-rows: 100px 500px 200px ;
+            gap:2rem;
+            padding:5rem;
+            box-shadow: none;
         }
 /* ===================================
        header styling
@@ -222,7 +226,9 @@ section{
         main > h3{
             grid-row: 2/4;
             grid-column: 1/2;
-            max-width: 90%;
+            font-weight: 800;
+            max-width: 70%;
+
         }
         main > p{
             grid-row: 2/3;
@@ -244,9 +250,10 @@ section{
             flex-direction: row;
 
         }
-        
-        .cards-text{
-            
-        }
-
+    /* ===================================
+    aside styling
+    =================================== */
+    .news h3{
+        padding: 1rem 0;
+    }
 }
